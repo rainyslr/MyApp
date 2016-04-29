@@ -1,0 +1,6 @@
+*.[oa]
+*.swp
+*~
+*diff
+*.DS_Store
+*._.DS_Store
