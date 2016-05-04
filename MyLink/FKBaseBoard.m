@@ -72,7 +72,8 @@
         begin_x = (width - xSize * self.piece_width)/2 + self.piece_height / 2;
         begin_y = beginImageY + self.piece_height / 2;
     }
-    
+//    begin_x = beginImageX;
+//    begin_y = beginImageY;
     for (int i = 0; i < notNullPieces.count; i++)
     {
         // 依次获取每个FKPiece对象
@@ -87,6 +88,8 @@
         [[pieces objectAtIndex:piece.indexX]
          setObject:piece atIndex:piece.indexY];
     }
+    self.Begin_X = begin_x;
+    self.Begin_Y = begin_y;
     return pieces;
 }
 @end

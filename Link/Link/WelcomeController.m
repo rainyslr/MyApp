@@ -21,15 +21,38 @@ NSArray* scenes;
 //    [super init];
       return  self;
 }
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+         //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"welcome.png"]];
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    //self.view.backgroundColor = [UIColor yellowColor];
+
+}
+
+- (void)awakeFromNib{
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"welcome.png"]];
+//    self.view.backgroundColor = [UIColor yellowColor];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     //UIImageView* imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"welcome.png"]];
+//     UIImageView* imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"welcome.png"]];
 //    [self.view insertSubview:imgView atIndex:0];
+//    self.view.backgroundColor = [UIColor yellowColor];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"welcome.png"]];
 //    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"small_bg.png"]];
 //    UIImage *image = [UIImage imageNamed:@"welcome.png"];
 //    self.view.layer.contents = (id) image.CGImage;
+    
+
+    
     modes = [[NSArray alloc] initWithObjects:@"完满模式", @"竖条纹", @"横条纹", nil];
     scenes = [[NSArray alloc] initWithObjects:@"动物世界", @"qq风格", nil];
     self.chosenMode = [modes objectAtIndex:0];

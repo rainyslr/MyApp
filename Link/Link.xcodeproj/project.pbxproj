@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582D6B591CD9C0BC0060A28F /* FKLunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582D6B581CD9C0BC0060A28F /* FKLunchViewController.m */; };
 		58CA8B6A1CCF9F6000CA4071 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CA8B681CCF9F6000CA4071 /* play.png */; };
 		58CA8B6B1CCF9F6000CA4071 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CA8B691CCF9F6000CA4071 /* stop.png */; };
 		58CA8B731CCFBC4500CA4071 /* bigbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CA8B721CCFBC4500CA4071 /* bigbg.png */; };
@@ -122,6 +123,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582D6B571CD9C0BC0060A28F /* FKLunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLunchViewController.h; sourceTree = "<group>"; };
+		582D6B581CD9C0BC0060A28F /* FKLunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKLunchViewController.m; sourceTree = "<group>"; };
 		58CA8B681CCF9F6000CA4071 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		58CA8B691CCF9F6000CA4071 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		58CA8B721CCFBC4500CA4071 /* bigbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigbg.png; sourceTree = "<group>"; };
@@ -307,6 +310,8 @@
 				CC961FEC1817AF77003B57AA /* FKViewController.h */,
 				CC961FED1817AF77003B57AA /* FKViewController.m */,
 				CC961FE91817AF77003B57AA /* Main.storyboard */,
+				582D6B571CD9C0BC0060A28F /* FKLunchViewController.h */,
+				582D6B581CD9C0BC0060A28F /* FKLunchViewController.m */,
 				58DD7B4B1CCE813900DD1B25 /* WelcomeController.h */,
 				58DD7B4C1CCE813900DD1B25 /* WelcomeController.m */,
 				CC961FEF1817AF77003B57AA /* Images.xcassets */,
@@ -678,6 +683,7 @@
 				CC961FE41817AF77003B57AA /* main.m in Sources */,
 				CC961FE81817AF77003B57AA /* FKAppDelegate.m in Sources */,
 				CC96206A1817B088003B57AA /* FKPoint.m in Sources */,
+				582D6B591CD9C0BC0060A28F /* FKLunchViewController.m in Sources */,
 				CC961FEE1817AF77003B57AA /* FKViewController.m in Sources */,
 				CC9620681817B088003B57AA /* FKVerticalBoard.m in Sources */,
 				CC96206C1817B088003B57AA /* FKPiece.m in Sources */,
@@ -781,14 +787,14 @@
 		CC9620071817AF77003B57AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Link/Link-Prefix.pch";
 				INFOPLIST_FILE = "Link/Link-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = iclound.com.Link;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -800,14 +806,14 @@
 		CC9620081817AF77003B57AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Link/Link-Prefix.pch";
 				INFOPLIST_FILE = "Link/Link-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = iclound.com.Link;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
