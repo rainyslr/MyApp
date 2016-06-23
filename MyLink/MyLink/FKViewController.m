@@ -56,20 +56,21 @@ UIAlertView* successAlert;
 		message:@"游戏胜利！重新开始？"delegate:self
 		cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     gameView.hidden = YES;
-  
+//    gameView.userInteractionEnabled = NO;
     if (self.silent) {
         //当前为静音模式，因此调声按钮图标为有声喇叭（意为点击后离开静音模式）
-        self.VoiceCtnlBtn.imageView.image = [UIImage imageNamed:@"有声喇叭.png"];
+        [self.VoiceCtnlBtn setBackgroundImage:[UIImage imageNamed:@"最新有声.png"] forState:UIControlStateNormal];
     }
     else
     {
         //当前为有声模式，因此调声按钮图标为静音喇叭（意为点击后进入静音模式）
-        self.VoiceCtnlBtn.imageView.image = [UIImage imageNamed:@"静音喇叭.png"];
+        [self.VoiceCtnlBtn setBackgroundImage:[UIImage imageNamed:@"最新静音.png"] forState:UIControlStateNormal];
     }
    
 }
 - (void) startGame
 {
+//    gameView.userInteractionEnabled = YES;
     gameView.hidden = NO;
     self.returnBtn.enabled = NO;
     self.startBn.enabled = NO;
@@ -175,12 +176,12 @@ UIAlertView* successAlert;
     [gameView ControlVioce:self.silent];
     if (self.silent) {
         //当前为静音模式，因此调声按钮图标为有声喇叭（意为点击后离开静音模式）
-        self.VoiceCtnlBtn.imageView.image = [UIImage imageNamed:@"有声喇叭.png"];
+        [self.VoiceCtnlBtn setBackgroundImage:[UIImage imageNamed:@"最新有声.png"] forState:UIControlStateNormal];
     }
     else
     {
         //当前为有声模式，因此调声按钮图标为静音喇叭（意为点击后进入静音模式）
-        self.VoiceCtnlBtn.imageView.image = [UIImage imageNamed:@"静音喇叭.png"];
+        [self.VoiceCtnlBtn setBackgroundImage:[UIImage imageNamed:@"最新静音.png"] forState:UIControlStateNormal];
     }
 
 }

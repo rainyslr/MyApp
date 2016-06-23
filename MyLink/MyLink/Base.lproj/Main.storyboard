@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="标题3.png" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-7x-SNH">
-                                <rect key="frame" x="121" y="169" width="192" height="117"/>
+                                <rect key="frame" x="92" y="174" width="192" height="117"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I09-Wv-W64">
-                                <rect key="frame" x="171" y="346" width="142" height="58"/>
+                                <rect key="frame" x="163" y="311" width="142" height="58"/>
                                 <state key="normal" title="模式选择" backgroundImage="纯白云.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJd-Bl-Qnk">
-                                <rect key="frame" x="121" y="462" width="142" height="58"/>
+                                <rect key="frame" x="100" y="385" width="142" height="58"/>
                                 <state key="normal" title="场景选择" backgroundImage="纯白云.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-I9-JuX">
-                                <rect key="frame" x="77" y="576" width="142" height="58"/>
+                                <rect key="frame" x="54" y="480" width="142" height="58"/>
                                 <state key="normal" title="进入游戏" backgroundImage="纯白云.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -69,15 +69,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-2b-dUe">
-                                <rect key="frame" x="-5" y="618" width="42" height="49"/>
+                                <rect key="frame" x="-5" y="618" width="59" height="49"/>
                                 <state key="normal" backgroundImage="返回.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="yiA-GR-cDy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zD-NN-xjY">
-                                <rect key="frame" x="34" y="616" width="84" height="51"/>
-                                <state key="normal" backgroundImage="play.png"/>
+                                <rect key="frame" x="56" y="616" width="62" height="51"/>
+                                <state key="normal" backgroundImage="最新开始.png"/>
                                 <connections>
                                     <action selector="StartGame:" destination="iC7-EW-RcT" eventType="touchUpInside" id="Esi-No-Ihc"/>
                                 </connections>
@@ -90,16 +90,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJY-gM-8Fh">
-                                <rect key="frame" x="234" y="616" width="81" height="51"/>
-                                <state key="normal" backgroundImage="stop.png"/>
+                                <rect key="frame" x="234" y="616" width="64" height="51"/>
+                                <state key="normal" backgroundImage="最新停止.png"/>
                                 <connections>
                                     <action selector="StopGame:" destination="iC7-EW-RcT" eventType="touchUpInside" id="Alf-PJ-33Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guB-Ox-n0T">
-                                <rect key="frame" x="310" y="624" width="52" height="37"/>
-                                <state key="normal" title="hh" backgroundImage="有声喇叭.png">
-                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="306" y="612" width="65" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="changeVoice:" destination="iC7-EW-RcT" eventType="touchUpInside" id="onk-yQ-oLB"/>
@@ -118,13 +119,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RL-xI-m2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565.5" y="467.5"/>
+            <point key="canvasLocation" x="633.5" y="494.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="play.png" width="698" height="212"/>
-        <image name="stop.png" width="676" height="218"/>
-        <image name="有声喇叭.png" width="281" height="261"/>
+        <image name="最新停止.png" width="458" height="458"/>
+        <image name="最新开始.png" width="398" height="398"/>
         <image name="标题3.png" width="1024" height="1024"/>
         <image name="纯白云.png" width="525" height="180"/>
         <image name="返回.png" width="182" height="100"/>
