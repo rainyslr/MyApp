@@ -8,16 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
 @protocol SlideTabBarViewDelegate <NSObject>
-- (UITableView*) tableForPage:(NSInteger)page;
+- (UITableView*) tableForPage:(NSInteger)page withFrame:(CGRect)frame;
+- (CGFloat) heightForTopBar;
+- (NSArray*) titlesForTapButton;
 @end
 
 @protocol SlideTabBarViewDataSource<NSObject>
-- (UITableView*) tableAtPage:(NSInteger)page;
--(NSInteger)numberOfSectionsInTableAtPage:(NSInteger)page;
--(NSInteger) tableAtPage:(NSInteger)page numberOfRowsInSection:(NSInteger)section;
--(CGFloat) tableAtPage:(NSInteger)page heightForRowAtIndexPath:(NSIndexPath *)indexPath;
--(UITableViewCell *)tableAtPage:(NSInteger)page cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView atPage:(NSInteger)page;
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section atPage:(NSInteger)page;
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath atPage:(NSInteger)page;
+-(UITableViewCell *)tableView:tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath atPage:(NSInteger)page;
 @end
 
 @interface SlideTabBarView : UIView
@@ -25,8 +27,8 @@
 @property (nonatomic,assign) NSInteger topBarHeight;
 @property (nonatomic,assign) NSInteger indicatorSlideHeight;
 @property (nonatomic, strong) id<SlideTabBarViewDelegate,SlideTabBarViewDataSource> delegate;
--(instancetype)initWithFrame:(CGRect)frame withTopBarHeight:(NSInteger)height titles: (NSArray*) titleArray;
-//-(instancetype)initWithFrame:(CGRect)frame withTopBarHeight:(NSInteger)height count: (NSInteger) count;
+-(instancetype)initWithFrame:(CGRect)frame withDelegate:(id)delegate;
+- (void)setColor:(UIColor*)color AtIndex:(NSInteger)index;
 
 
 @end
